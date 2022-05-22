@@ -1,6 +1,6 @@
 #include "App/App.h"
 
-int main(int, char const** argv) {
+int main() {
     App().run();
     return 0;
 }
