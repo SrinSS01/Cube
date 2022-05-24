@@ -1,12 +1,10 @@
 #version 460 core
 
-in vec4 vColor;
-//in vec2 v_texcoord;
+in vec2 vTexcoord;
 out vec4 fColor;
 
-//uniform sampler2D u_texture;
+uniform sampler2D u_texture;
 
 void main() {
-	fColor = vColor;
-//	fColor = texture(u_texture, v_texcoord);
+	fColor = texture(u_texture, vTexcoord);
 }
